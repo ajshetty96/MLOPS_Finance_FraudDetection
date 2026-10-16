@@ -1,0 +1,33 @@
+image:
+  repository: "347486023960.dkr.ecr.us-east-1.amazonaws.com/paysense-producer"
+  tag: "3bdea35bcd923cf745d3f68350fd9dfc52f30d4e"
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+env:
+  KAFKA_BOOTSTRAP_SERVERS: "kafka-cluster-kafka-bootstrap.paysense.svc.cluster.local:9092"
+  KAFKA_TOPIC_TRANSACTIONS: "transactions"
+
+args:
+  - "--rows"
+  - "0"
+  - "--fraud-rate"
+  - "0.1"
+  - "--tps"
+  - "50"
+  - "--mode"
+  - "kafka"
+
+resources:
+  requests:
+    cpu: 128m
+    memory: 128Mi
+  limits:
+    cpu: 256m
+    memory: 256Mi
+
+serviceAccount:
+  irsaRoleArn: ""
+
+metricsPort: 9090
