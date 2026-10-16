@@ -2,12 +2,8 @@
 
 > **Production-grade, event-driven fraud detection system** built on AWS EKS with Kafka streaming, MLflow model versioning, GitOps deployments, and full-stack observability. Every component is provisioned via Infrastructure-as-Code using Terraform.
 
-![Producer CI](https://github.com/Yash-Rathod/PaySense2/actions/workflows/ci-producer.yml/badge.svg)
-![Consumer CI](https://github.com/Yash-Rathod/PaySense2/actions/workflows/ci-consumer.yml/badge.svg)
 
-[![Watch the full project walkthrough on YouTube](https://img.youtube.com/vi/0bPweooktf4/maxresdefault.jpg)](https://www.youtube.com/watch?v=0bPweooktf4)
 
-> **Watch:** Full project walkthrough — architecture, live Kafka stress test, Grafana dashboards, and ArgoCD GitOps demo on a real AWS EKS cluster.
 
 ---
 
